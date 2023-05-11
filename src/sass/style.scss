@@ -265,7 +265,6 @@ body {
   }
 
   .es-benefits {
-    margin-bottom: 72px;
     &__title {
       @include text;
       font-weight: 700;
@@ -339,6 +338,44 @@ body {
       @include text;
       padding-top: 5px;
       font-size: 16px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .es-photo {
+    min-height: 400px;
+    background-image: url('../images/bg-photo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    &__container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    &__single {
+      width: 33%;
+      text-align: center;
+    }
+    &__image {
+      @include img;
+      max-width: 100px;
+    }
+    &__desc {
+      @include text;
+      padding: 15px 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: -1px;
+      font-family: $condensed;
     }
   }
   .es-banner {
@@ -839,6 +876,11 @@ body {
         margin-top: 60px;
       }
     }
+    .es-photo {
+      &__desc {
+        font-size: 20px;
+      }
+    }
   }
 
   @media screen and (min-width: 560px) {
@@ -911,7 +953,7 @@ body {
       }
     }
     .es-benefits {
-      padding: 16px 0;
+      padding: 16px 0 0;
       margin-bottom: 0;
       &__container {
         display: flex;
