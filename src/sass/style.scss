@@ -204,53 +204,29 @@ body {
 
   .es-features {
     margin-bottom: 72px;
-    &__inner {
-      margin-bottom: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    &__text-inner {
-      display: flex;
-      flex-direction: column;
-    }
-    &__image {
-      @include img;
-    }
     &__title {
       @include text;
+      margin-top: 32px;
       padding: 0 16px;
-      padding-top: 40px;
+      padding-top: 24px;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 38px;
+      font-size: 30px;
       letter-spacing: -1px;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       text-align: center;
       font-family: $condensed;
-      &--gradient {
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-top: 60px;
-        margin-bottom: 30px;
-        font-size: 32px;
-        background: -webkit-linear-gradient(left, #f4a452, #ee6f34);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      span {
+      & span {
         font-weight: 300;
       }
     }
     &__subtitle {
       @include text;
-      margin-bottom: 64px;
-      font-weight: 700;
+      margin: 0 auto;
+      width: 80%;
       padding: 0 16px;
-      font-size: 23px;
+      margin-bottom: 32px;
       text-align: center;
-      text-transform: uppercase;
     }
     &__container {
       display: flex;
@@ -259,6 +235,7 @@ body {
       gap: 32px 4px;
     }
     &__single {
+      width: 300px;
     }
     &__img {
       @include img;
@@ -270,23 +247,17 @@ body {
     &__benefit {
       @include text;
       font-family: $condensed;
-      font-size: 24px;
+      font-size: 17px;
       font-weight: 700;
       text-transform: uppercase;
       padding: 16px;
-      text-align: center;
-      min-height: 56px;
-    }
-    &__benefit-subtitle {
-      margin-top: -10px;
-      display: block;
       text-align: center;
     }
     &__text {
       @include text;
       margin-bottom: 16px;
       text-align: center;
-      font-size: 18px;
+      font-size: 16px;
       sup {
         line-height: 0;
       }
