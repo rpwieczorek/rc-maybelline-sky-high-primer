@@ -264,6 +264,83 @@ body {
     }
   }
 
+  .es-benefits {
+    margin-bottom: 72px;
+    &__title {
+      @include text;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 30px;
+      letter-spacing: -1px;
+      margin-bottom: 64px;
+      font-family: $condensed;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    &__image {
+      // padding-left: 32px;
+      max-width: 300px;
+      margin: 0 0 0 auto;
+    }
+    &__img {
+      @include img;
+
+    }
+    &__content {
+      padding: 0 16px;;
+    }
+    &__item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 64px;
+      &:nth-child(2) .es-benefits__text {
+        width: 100%;
+        max-width: 240px;
+      }
+      &:nth-child(3) .es-benefits__text {
+        width: 100%;
+        max-width: 320px;
+      }
+      &:nth-child(4) .es-benefits__text {
+        width: 100%;
+        max-width: 400px;
+      }
+      &:nth-child(5) .es-benefits__text {
+        width: 100%;
+        max-width: 560px;
+      }
+    }
+    &__number {
+      @include text;
+      font-size: 61px;
+      font-weight: 700;
+      line-height: 0.8;
+    }
+    &__text {
+      @include text;
+      padding-top: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 19px;
+      border-top: 2px solid #000;
+    }
+    &__title2 {
+      @include text;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 30px;
+      letter-spacing: -1px;
+      font-family: $condensed;
+    }
+    &__desc {
+      @include text;
+      padding-top: 5px;
+      font-size: 16px;
+    }
+  }
   .es-banner {
     margin-bottom: 64px;
     &__img {
@@ -833,7 +910,32 @@ body {
         }
       }
     }
-
+    .es-benefits {
+      padding: 16px 0;
+      margin-bottom: 0;
+      &__container {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap-reverse;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        gap: 0;
+      }
+      &__image {
+        flex: 1;
+        padding: 0;
+        // opacity: 0.8;
+      }
+      &__content {
+        flex: 1;
+        margin-right: -277px;
+        padding-left: 37px;
+        flex-grow: 1;
+      }
+      &__desc {
+        width: 60%;
+      }
+    }
     .es-banner {
       &__text {
         top: 50%;
